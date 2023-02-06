@@ -5,6 +5,12 @@ terraform {
       version = "4.49.0"
     }
   }
+  backend "s3" {
+    region = "ap-south-1"
+    bucket = "terraform-gitlab-project"
+    key = "terraform-project/terraform.tfstate"
+    encrypt = true
+  }
 }
 
 provider "aws" {
