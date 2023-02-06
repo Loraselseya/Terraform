@@ -9,7 +9,7 @@ terraform {
     region = "ap-south-1"
     bucket = "terraform-gitlab-project"
     key = "terraform-project/terraform.tfstate"
-    encrypt = True
+    encrypt = true
   }
 }
 
